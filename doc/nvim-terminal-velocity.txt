@@ -1,0 +1,55 @@
+*nvim-terminal-velocity.txt* To expedite terminal interactions.
+
+                            Terminal Velocity
+
+==============================================================================
+
+CONTENTS                                 *nvim-terminal-velocity-contents*
+
+    1. Introduction .......................... |nvim-terminal-velocity-intro|
+    2. Leaving Insert Mode ............. |nvim-terminal-velocity-insert-mode|
+    3. Leaving the Terminal Window .......... |nvim-terminal-velocity-window|
+    4. Starting a Terminal Window ....... |nvim-terminal-velocity-new-window|
+
+
+Original Author:    Jacob Simpson
+License:            MIT License
+
+INTRODUCTION                                *nvim-terminal-velocity-intro*
+
+Some simple key mappings to make terminal interaction in Neovim go more
+smoothly.
+
+LEAVING INSERT MODE                   *nvim-terminal-velocity-insert-mode*
+
+The default key mapping in a Neovim terminal to transition from insert mode to
+normal mode is:
+
+    <C-\><C-n>.
+
+With this plugin, that is remapped to just <ESC>. If you are running a vim or
+nvim instance inside a NeoVim terminal, and you need to send an ESC to the
+embedded instance, use:
+
+    <C-\><ESC>
+
+WINDOW NAVIGATION                         *nvim-terminal-velocity-window*
+
+Navigating between vim windows, when leaving a terminal, uses Alt combined with
+the usual vim navigation keys:
+
+    <A-h>   - navigate to the window to the left
+    <A-j>   - navigate to the window on the bottom
+    <A-k>   - navigate to the window on the top
+    <A-l>   - navigate to the window to the right
+
+STARTING A TERMINAL                  *nvim-terminal-velocity-new-window*
+
+When starting a new terminal, there are some key combinations available:
+
+    ,th    - start a new terminal to the left of the current window
+    ,tj    - start a new terminal below the current window
+    ,tk    - start a new terminal above the current window
+    ,tl    - start a new terminal to the right of the current window
+    ,t.    - start a new terminal in the current window
+

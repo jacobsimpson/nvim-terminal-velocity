@@ -1,0 +1,4 @@
+#! /bin/bash
+
+echo "will the real vim please step forward."
+
